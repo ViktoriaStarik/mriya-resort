@@ -1,3 +1,4 @@
+// Desktop menu
 import Vue from 'vue/dist/vue';
 Vue.component('header-menu', require('./HeaderMenu.vue').default);
 

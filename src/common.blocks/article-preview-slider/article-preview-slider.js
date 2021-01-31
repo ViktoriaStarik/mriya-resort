@@ -7,7 +7,7 @@ export default context => context.forEach(element => {
         prevButton = element.querySelector('.article-preview-slider__button_prev'),
         nextButton = element.querySelector('.article-preview-slider__button_next'),
 
-        swiper = new Swiper(element, {
+        optionsSlider = {
             effect: 'fade',
             fadeEffect: {
                 crossFade: true
@@ -16,5 +16,7 @@ export default context => context.forEach(element => {
                 nextEl: nextButton,
                 prevEl: prevButton,
             },
-        });
+        },
+
+        swiper = new Swiper(element, optionsSlider);
 });

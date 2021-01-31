@@ -7,7 +7,7 @@ export default context => context.forEach(element => {
         prevButton = element.querySelector('.vacation-preview-slider__button_prev'),
         nextButton = element.querySelector('.vacation-preview-slider__button_next'),
 
-        swiper = new Swiper(element, {
+        optionsSlider = {
             slidesPerView: 1,
             slidesPerColumn: 2,
             slidesPerColumnFill: 'row',
@@ -24,5 +24,7 @@ export default context => context.forEach(element => {
                     spaceBetween: 40,
                 }
             }
-        });
+        },
+
+        swiper = new Swiper(element, optionsSlider);
 });

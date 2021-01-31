@@ -6,7 +6,7 @@ export default context => context.forEach(element => {
     const
         pagination = element.querySelector('.header-popup-slider__pagination'),
 
-        swiper = new Swiper(element, {
+        optionsSlider = {
             slidesPerView: 1,
             pagination: {
                 el: pagination,
@@ -27,5 +27,7 @@ export default context => context.forEach(element => {
             autoplay: {
                 delay: 3000,
             },
-        });
+        },
+
+        swiper = new Swiper(element, optionsSlider);
 });
