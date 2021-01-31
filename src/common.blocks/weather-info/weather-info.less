@@ -1,0 +1,50 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.weather-info {
+    @path: '../common.blocks/weather-info/';
+    color: white;
+
+    &__value {
+        margin-bottom: -2px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    &__caption {
+        margin-bottom: 6px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__location {
+        position: relative;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:after {
+            .icon('@{path}weather-info__location', 12px, 16px);
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -36px;
+            transform: translateY(-50%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: -83px;
+        width: 59px;
+        height: 52px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

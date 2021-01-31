@@ -1,0 +1,1 @@
+(self.webpackChunkwebpacktemplate=self.webpackChunkwebpacktemplate||[]).push([[967],{8967:(e,t,c)=>{"use strict";c.r(t),c.d(t,{default:()=>o});const o=function(e){return e.forEach((function(e){var t=e.querySelector(".top-slide__scroll-button"),c=t.dataset.scrollTo,o=document.querySelector(c);t.addEventListener("click",(function(){o.scrollIntoView({behavior:"smooth"})}))}))}}}]);

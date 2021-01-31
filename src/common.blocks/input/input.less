@@ -1,0 +1,79 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.input {
+    @path: '../common.blocks/input/';
+
+    background: white;
+    border: 1px solid @gray;
+    padding: 20px 15px;
+    overflow: hidden;
+
+    @media (max-width: @screen-xs) {
+        padding: 21px 15px;
+    }
+
+    //Элементы
+    &__field {
+        white-space: nowrap;
+    }
+
+    select {
+        display: none;
+    }
+
+    //Модификаторы
+    &_with-icon {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 11px;
+            transform: translateY(-50%);
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @media (max-width: @screen-xs) {
+                right: 20px;
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 79px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 16px);
+        }
+    }
+
+    &_select {
+        cursor: pointer;
+
+        &:after {
+            .icon('@{path}input_select', 14px, 5px);
+        }
+    }
+
+    &_date-time {
+        cursor: pointer;
+
+        &:after {
+            .icon('@{path}input_date-time', 23px, 22px);
+        }
+    }
+
+    &_person {
+        cursor: pointer;
+
+        &:after {
+            .icon('@{path}input_person', 20px, 22px);
+        }
+    }
+}

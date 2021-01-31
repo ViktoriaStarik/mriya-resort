@@ -1,0 +1,56 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.header-popup-slide {
+    @path: '../common.blocks/vacation-preview-slide/';
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 730px;
+        height: 730px;
+        background: rgba(0, 0, 0, .32);
+        border-radius: 50%;
+        bottom: -424px;
+        left: -365px;
+        z-index: 0;
+    }
+
+    //Элементы
+    &__image {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        z-index: 1;
+        color: white;
+        font-size: 24px;
+        line-height: 1.33;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .32);
+    }
+
+    &__title {
+        margin-bottom: 2px;
+        font-family: @font-second;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 56px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.32);
+    }
+
+    &__description {
+        margin-bottom: 25px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

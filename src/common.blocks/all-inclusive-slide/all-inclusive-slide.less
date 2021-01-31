@@ -1,0 +1,65 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.all-inclusive-slide {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    @path: '../common.blocks/all-inclusive-slide/';
+    overflow: hidden;
+    position: relative;
+    margin: 0 24px;
+    background-color: @gray-light;
+    border-radius: 24px;
+
+    @media (max-width: @screen-xs) {
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    & > * {
+        z-index: 1;
+    }
+
+    &__background-left,
+    &__background-right {
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+
+        &:after {
+            content: '';
+            display: block;
+        }
+
+        @media (max-width: @screen-xs) {
+            display: none;
+        }
+    }
+
+    &__background-left {
+        left: -547px;
+        bottom: -237px;
+        width: calc(1181 / 1440 * 100%);
+        max-width: 1181px;
+        background-image: url("@{path}/all-inclusive-slide__background-left.svg");
+
+        &:after {
+            padding-top: calc(1159 / 1181 * 100%);
+        }
+    }
+
+    &__background-right {
+        right: -24px;
+        top: 0;
+        width: calc(337 / 1440 * 100%);
+        max-width: 337px;
+        background-image: url("@{path}/all-inclusive-slide__background-right.svg");
+
+        &:after {
+            padding-top: calc(1449 / 337 * 100%);
+        }
+    }
+}

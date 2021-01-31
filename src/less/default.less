@@ -1,0 +1,78 @@
+@import "variables";
+
+body, html {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: @color-main;
+  font-family: @font-main;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+a {
+  color: @color-main;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-second;
+}
+
+h1 {
+  font-size: 96px;
+  line-height: 1;
+
+  @media (max-width: @screen-xs) {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 1.4;
+
+  @media (max-width: @screen-xs) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.4;
+
+  @media (max-width: @screen-xs) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 26px;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#app {
+  @media (max-width: @screen-xs) {
+    position: relative;
+  }
+}

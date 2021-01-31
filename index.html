@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mriya Resort</title>
+    <link rel="stylesheet" type="text/css" href="src/less/style.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="header">
+            <div class="header-popup header__header-popup">
+                <div class="header-popup__container">
+                    <div class="header-popup__top">
+                        <div class="header-popup__lang">
+                            <a href="javascript:;" class="header-link header-link_inverse">Ru</a>
+                        </div>
+                        <a href="javascript:;" class="logo header-popup__logo">
+                            <span class="logo__icon"></span>
+                        </a>
+                        <div class="width-wrapper header-popup__top-content-wrapper">
+                            <div class="header-popup__top-content">
+                                <div class="header-popup__nav">
+                                    <a href="javascript:;" class="header-link header-link_inverse">О комплексе</a>
+                                    <a href="javascript:;" class="header-link header-link_inverse">Блог</a>
+                                    <a href="javascript:;" class="header-link header-link_inverse">FAQ</a>
+                                    <a href="javascript:;" class="header-link header-link_inverse">Контакты</a>
+                                </div>
+                                <a href="javascript:;"
+                                   class="header-link header-link_inverse header-link_entry">Вход</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-popup__bottom">
+                        <div class="socials header-popup__socials">
+                            <a href="javascript:;"
+                               class="socials__item socials__item_inverse socials__item_facebook"></a>
+                            <a href="javascript:;"
+                               class="socials__item socials__item_inverse socials__item_twitter"></a>
+                            <a href="javascript:;"
+                               class="socials__item socials__item_inverse socials__item_instagram"></a>
+                        </div>
+                        <div class="header-popup__content">
+                            <div class="header-popup__content-top">
+                                <div class="header-menu"></div>
+                                <div class="header-popup-slider header-popup__header-popup-slider swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="header-popup-slide">
+                                                <div class="header-popup-slide__image"
+                                                     style="background-image: url('./temp/header-slider/01.jpg')"></div>
+                                                <div class="header-popup-slide__content">
+                                                    <div class="header-popup-slide__title">Антистресс</div>
+                                                    <div class="header-popup-slide__description">10-21 дня</div>
+                                                    <a href="javascript:;" class="button">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="header-popup-slide">
+                                                <div class="header-popup-slide__image"
+                                                     style="background-image: url('./temp/vacations/01.png')"></div>
+                                                <div class="header-popup-slide__content">
+                                                    <div class="header-popup-slide__title">Антистресс</div>
+                                                    <div class="header-popup-slide__description">10-21 дня</div>
+                                                    <a href="javascript:;" class="button">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="header-popup-slide">
+                                                <div class="header-popup-slide__image"
+                                                     style="background-image: url('./temp/header-slider/01.jpg')"></div>
+                                                <div class="header-popup-slide__content">
+                                                    <div class="header-popup-slide__title">Антистресс</div>
+                                                    <div class="header-popup-slide__description">10-21 дня</div>
+                                                    <a href="javascript:;" class="button">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-popup-slider__pagination"></div>
+                                </div>
+                            </div>
+                            <a href="mailto:info@mriyaresort.com" class="header-popup__footer">info@mriyaresort.com</a>
+                        </div>
+                    </div>
+                    <div class="width-wrapper header-popup-adaptive">
+                        <div class="header-popup-adaptive__menu">
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Размещение</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Медицина</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Мероприятия</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Красота и восстановление</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Бары и рестораны</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Развлечения</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Спорт</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Детям</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                            <div class="header-menu__item">
+                                <a href="javascript:;" class="header-menu__link header-menu__link_main">Транспорт</a>
+                                <div class="header-menu__submenu">
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Клиника персонализированной медицины</a>
+                                    <a href="javascript:;" class="header-menu__link header-menu__link_submenu">Медицинский центр</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="button header-popup-adaptive__button">Найти номер</a>
+                        <div class="header-popup-adaptive__pages">
+                            <a href="javascript:;" class="header-link header-link_inverse">О комплексе</a>
+                            <a href="javascript:;" class="header-link header-link_inverse">Блог</a>
+                            <a href="javascript:;" class="header-link header-link_inverse">FAQ</a>
+                            <a href="javascript:;" class="header-link header-link_inverse">Афиша</a>
+                            <a href="javascript:;" class="header-link header-link_inverse">Спецпредложения</a>
+                            <a href="javascript:;" class="header-link header-link_inverse">Важная информация</a>
+                            <a href="javascript:;" class="header-link header-link_inverse">Контакты</a>
+                        </div>
+                        <div class="socials header-popup-adaptive__socials">
+                            <a href="javascript:;"
+                               class="socials__item socials__item_inverse socials__item_facebook"></a>
+                            <a href="javascript:;"
+                               class="socials__item socials__item_inverse socials__item_twitter"></a>
+                            <a href="javascript:;"
+                               class="socials__item socials__item_inverse socials__item_instagram"></a>
+                        </div>
+
+                        <a href="tel:88005006847" class="header-link header-link_inverse header-popup-adaptive__phone">8
+                            800 500 6847</a>
+                        <a href="mailto:info@mriyaresort.com"
+                           class="header-link header-link_inverse header-popup-adaptive__mail">info@mriyaresort.com</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="hamburger header__hamburger">
+                    <span class="hamburger__line"></span>
+                </a>
+            </div>
+            <div class="width-wrapper header__wrapper">
+                <div class="header__left">
+                    <div class="header__nav">
+                        <a href="javascript:;" class="header-link">О комплексе</a>
+                        <a href="javascript:;" class="header-link">Блог</a>
+                        <a href="javascript:;" class="header-link">FAQ</a>
+                        <a href="javascript:;" class="header-link">Контакты</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="logo logo_with-stars header__logo">
+                    <span class="logo__icon"></span>
+                </a>
+                <div class="header__right">
+                    <div class="header__lang">
+                        <a href="javascript:;" class="header-link">Ru</a>
+                        <a href="javascript:;" class="header-link header-link_inactive">Eng</a>
+                    </div>
+                    <div class="header__controls">
+                        <a href="javascript:;" class="header-link header-link_inverse header-link_entry header__entry">Вход</a>
+                        <a href="javascript:;" class="header__entry-adaptive"></a>
+                        <a href="tel:88005006847" class="header-link header-link_inverse header__phone">8 800 500
+                            6847</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="top-slide">
+            <div class="width-wrapper">
+                <div class="top-slide__content">
+                    <div class="top-slide__wave"></div>
+                    <div class="top-slide__top-caption">Family & Health Club</div>
+                    <h1 class="top-slide__title">
+                        Mriya<br/>
+                        Resort
+                    </h1>
+                    <div class="top-slide__description">
+                        Российский курорт для всей семьи
+                        на&nbsp;берегу черного моря
+                    </div>
+                    <div class="top-slide__buttons-wrapper">
+                        <a href="javascript:;" class="button">Найти номер</a>
+                        <a href="javascript:;" class="button button_theme_outline">3D Тур</a>
+                    </div>
+                    <a href="javascript:;" class="top-slide__scroll-button" data-scroll-to="#choose-slide"></a>
+                    <div class="socials top-slide__socials">
+                        <a href="javascript:;" class="socials__item socials__item_facebook"></a>
+                        <a href="javascript:;" class="socials__item socials__item_twitter"></a>
+                        <a href="javascript:;" class="socials__item socials__item_instagram"></a>
+                    </div>
+
+                    <div class="top-slide__background">
+                        <div class="top-slide__video video">
+                            <video autoplay muted loop height="936">
+                                <source src="/src/video/mriya.mp4">
+                            </video>
+                            <svg width="1948" height="1774" viewBox="0 0 1948 1774" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <clipPath id="clip-00">
+                                    <path d="M836.512 -491.309L839.088 -492C879.195 -458.268 919.038 -424.136 956.377 -387.355C1043.52 -302.309 1119.93 -204.91 1172.81 -94.8618C1212.27 -13.6735 1238.15 73.7112 1252.82 162.658C1345.76 -15.517 1506.81 -157.214 1695.85 -225.808C1706.51 -160.332 1711.68 -93.7597 1706.34 -27.5382C1696.27 110.26 1651.86 244.659 1582.85 364.113C1625.47 349.063 1669.36 337.379 1714.11 330.574C1777.94 319.968 1842.99 321.725 1907 329.608C1895.64 361.651 1884.68 393.996 1869.64 424.596C1814.79 538.316 1725.45 633.603 1620.57 702.99C1501.09 781.727 1358.44 829.194 1214.55 824.643C1203.88 824.95 1191.68 820.642 1182.54 828.075C1087.28 891.217 974.508 925.155 861.067 933.818C721.963 944.211 579.05 917.61 455.898 851.236C406.953 825.434 363.036 791.323 321.875 754.578C348.358 735.287 374.858 715.909 403.421 699.767C470.528 661.513 544.548 635.533 620.648 622.547C501.946 554.939 397.357 461.552 319.765 348.944C280.749 293.13 251.023 231.532 227 167.993C425.013 132.745 635.3 175.02 804.932 282.767C761.845 170.052 739.544 49.0872 743.335 -71.7049C747.305 -215.981 785.072 -357.167 836.512 -491.309Z"/>
+                                </clipPath>
+                            </svg>
+                        </div>
+                        <div class="top-slide__background-stroke">
+                            <svg width="1948" height="1774" viewBox="0 0 1948 1774" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M911.531 -399.879L911.532 -399.878C998.7 -314.852 1075.11 -217.488 1127.99 -107.492L1127.99 -107.49C1167.45 -26.3414 1193.33 61.006 1208.01 149.922L1208.25 151.399L1208.94 150.072C1301.78 -27.835 1462.6 -169.358 1651.39 -237.994C1661.98 -172.729 1667.11 -106.394 1661.78 -40.4174L1661.78 -40.4136C1651.71 97.3185 1607.3 231.66 1538.28 351.068L1537.6 352.241L1538.88 351.79C1581.5 336.747 1625.39 325.071 1670.12 318.27L1670.13 318.269C1733.74 307.707 1798.56 309.415 1862.37 317.231C1861.32 320.205 1860.27 323.181 1859.22 326.158C1849 355.075 1838.77 384.04 1825.22 411.588L1825.22 411.592C1770.38 525.233 1681.06 620.465 1576.18 689.818C1456.71 768.516 1314.07 815.95 1170.22 811.402L1170.2 811.402L1170.19 811.402C1167.55 811.478 1164.81 811.269 1162.02 811.024C1161.68 810.994 1161.34 810.964 1160.99 810.933C1158.54 810.715 1156.07 810.494 1153.62 810.446C1148.05 810.335 1142.58 811.118 1137.88 814.93C1042.65 878.018 929.906 911.933 816.479 920.591C677.382 930.98 534.483 904.39 411.352 838.058L411.348 838.056C362.608 812.373 318.845 778.446 277.809 741.869L278.523 741.349C304.621 722.346 330.74 703.328 358.853 687.447L358.855 687.446C425.948 649.218 499.955 623.254 576.043 610.276L577.422 610.04L576.207 609.348C457.497 541.767 352.906 448.42 275.314 335.864L275.312 335.862C236.42 280.25 206.755 218.884 182.765 155.563C380.595 120.524 590.626 162.8 760.082 270.386L761.356 271.194L760.817 269.785C717.727 157.114 695.426 36.2012 699.217 -84.5332L699.217 -84.5352C703.185 -228.667 740.912 -369.729 792.323 -503.785L794.403 -504.342C834.465 -470.662 874.248 -436.589 911.531 -399.879Z"
+                                      stroke="#D9C287"/>
+                            </svg>
+                        </div>
+                        <div class="top-slide__background-petal">
+                            <svg width="1948" height="1774" viewBox="0 0 1948 1774" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path opacity="0.64"
+                                      d="M940.078 923.741C834.794 917.748 730.636 890.311 637.726 840.236C588.781 814.434 544.863 780.323 503.702 743.578L504.925 742.687C531.001 723.691 557.126 704.66 585.249 688.767C652.044 650.69 725.69 624.774 801.417 611.728C982.313 624.171 1144.94 703.063 1265.06 824.175C1248.54 825.001 1231.96 825.167 1215.38 824.643C1212.38 824.729 1209.26 824.451 1206.12 824.172L1206.12 824.172C1198.09 823.456 1189.94 822.73 1183.37 828.075C1110.08 876.653 1026.43 907.945 940.078 923.741Z"
+                                      fill="black"/>
+                                <path d="M851.178 923.905C851.087 923.9 850.995 923.894 850.904 923.889C725.323 916.263 600.264 878.426 495.87 807.37C470.334 790.271 446.969 770.284 423.669 750.352L423.665 750.348L423.494 750.202C421.253 748.285 419.014 746.369 416.772 744.456L415.993 743.791C416.266 743.586 416.539 743.38 416.811 743.175C468.104 704.58 523.324 670.756 583.624 648.125C625.323 631.82 668.683 620.063 712.623 611.79C712.774 611.761 712.925 611.733 713.076 611.705C714.37 611.793 715.663 611.885 716.955 611.98L716.979 611.994L714.316 612.49C669.911 620.768 626.097 632.591 583.988 649.056L583.975 649.061C523.862 671.622 468.785 705.337 417.591 743.84C419.833 745.754 422.073 747.67 424.314 749.587L424.316 749.589C447.623 769.527 470.942 789.475 496.426 806.539L496.433 806.543C600.658 877.484 725.536 915.274 850.963 922.891C852.422 922.977 853.881 923.059 855.341 923.137C853.954 923.397 852.567 923.653 851.178 923.905Z"
+                                      fill="white" fill-opacity="0.72"/>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="weather-info top-slide__weather-info">
+                        <div class="weather-info__value">27°</div>
+                        <div class="weather-info__caption">Облачно</div>
+                        <div class="weather-info__location">Ялта, Россия</div>
+                        <div class="weather-info__icon" style="background-image: url('./temp/weather/01.svg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choose-slide" id="choose-slide">
+            <div class="width-wrapper">
+                <h3 class="choose-slide__title"><b>Выберите свой отдых</b></h3>
+                <div class="filter-group choose-slide__filter-group">
+                    <div class="filter-group__input-list">
+                        <label class="input input_with-icon input_select filter-group__input-left">
+                            <span class="input__field">Семейный отдых</span>
+                        </label>
+                        <label class="input input_with-icon input_date-time filter-group__input-center">
+                            <span class="input__field">пт, 8 мая – вс, 17 мая</span>
+                        </label>
+                        <label class="input input_with-icon input_person filter-group__input-right">
+                            <span class="input__field">2 взрослых&nbsp;&nbsp;•&nbsp;&nbsp;без детей&nbsp;&nbsp;•&nbsp;&nbsp;1 номер</span>
+                        </label>
+                    </div>
+                    <a href="javascript:;" class="filter-group__button">Найти</a>
+                </div>
+                <div class="tabs">
+                    <div class="tabs__nav">
+                        <a href="javascript:;" class="tabs__nav-item" data-tab="special">Спецпредложения</a>
+                        <a href="javascript:;" class="tabs__nav-item" data-tab="poster">Афиша</a>
+                        <a href="javascript:;" class="tabs__nav-item" data-tab="categories">Категории отдыха</a>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__content-item" data-tab="special">
+                            <div class="vacation-preview-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/01.png')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__discount">-20%</div>
+                                                <div class="vacation-preview__title">Для тех кто рядом</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/02.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__discount">-10%</div>
+                                                <div class="vacation-preview__title">Раннее бронирование</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vacation-preview-slider__buttons-container">
+                                    <a href="javascript:;"
+                                       class="vacation-preview-slider__button vacation-preview-slider__button_prev"></a>
+                                    <a href="javascript:;"
+                                       class="vacation-preview-slider__button vacation-preview-slider__button_next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item" data-tab="poster">
+                            <div class="vacation-preview-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/01.png')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__discount">-20%</div>
+                                                <div class="vacation-preview__title">Для тех кто рядом</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/02.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Релакс и красота</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/01.png')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__discount">-20%</div>
+                                                <div class="vacation-preview__title">Для тех кто рядом</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/02.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Релакс и красота</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/01.png')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__discount">-20%</div>
+                                                <div class="vacation-preview__title">Для тех кто рядом</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/02.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Релакс и красота</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vacation-preview-slider__buttons-container">
+                                    <a href="javascript:;"
+                                       class="vacation-preview-slider__button vacation-preview-slider__button_prev"></a>
+                                    <a href="javascript:;"
+                                       class="vacation-preview-slider__button vacation-preview-slider__button_next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item" data-tab="categories">
+                            <div class="vacation-preview-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/03.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Семейный отдых</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/04.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Оздоровление</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/05.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Релакс и красота</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/06.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Новые впечатления</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="vacation-preview vacation-preview_category">
+                                            <div class="vacation-preview__image"
+                                                 style="background-image: url('./temp/vacations/03.jpg')"></div>
+                                            <div class="vacation-preview__content">
+                                                <div class="vacation-preview__title">Семейный отдых</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vacation-preview-slider__buttons-container">
+                                    <a href="javascript:;"
+                                       class="vacation-preview-slider__button vacation-preview-slider__button_prev"></a>
+                                    <a href="javascript:;"
+                                       class="vacation-preview-slider__button vacation-preview-slider__button_next"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-slide">
+            <div class="width-wrapper">
+                <div class="about-slide__content">
+                    <div class="about-slide__wave"></div>
+                    <h3 class="about-slide__title">Mriya Resort & SPA — <b>больше чем просто отдых</b></h3>
+                    <div class="about-slide__flower"></div>
+                    <div class="about-slide__description">
+                        В&nbsp;окружении необычного природного ландшафта курорт становится по-настоящему уникальным. Это
+                        место идеально для тех, кто больше гор любит только море.
+                    </div>
+                    <a href="javascript:;" class="button button_theme_outline">О комплексе</a>
+                </div>
+            </div>
+            <div class="about-slide__background-left"></div>
+            <div class="about-slide__background-right"></div>
+        </div>
+        <div class="all-inclusive-slide">
+            <div class="width-wrapper">
+
+                <div class="article-preview-slider swiper-container">
+                    <div class="article-preview-slider__header">
+                        <h2 class="all-inclusive-slide__title"><b>Все включено</b></h2>
+                        <div class="article-preview-slider__buttons-container">
+                            <a href="javascript:;"
+                               class="article-preview-slider__button article-preview-slider__button_prev"></a>
+                            <a href="javascript:;"
+                               class="article-preview-slider__button article-preview-slider__button_next"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="article-preview-slide">
+                                <div class="article-preview-slide__column article-preview-slide__column_size_l">
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo"
+                                  style="background-image: url('./temp/all-inclusive/01.png')"></span>
+                                        <span class="article-preview__caption">Занимайтесь в&nbsp;тренажерном зале и&nbsp;посещайте
+                                групповые тренировки
+                            </span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                                <div class="article-preview-slide__column article-preview-slide__column_size_m">
+                                    <div class="article-preview-slide__tag">Оздоровление</div>
+                                    <div class="article-preview-slide__description">
+                                        Mriya Resort&nbsp;&mdash; это маленький город со&nbsp;множеством возможностей,
+                                        каждый найдет
+                                        себе занятие по&nbsp;вкусу
+                                    </div>
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo article-preview__photo_small"
+                                  style="background-image: url('./temp/all-inclusive/02.jpg')"></span>
+                                        <span class="article-preview__caption">Питаться в&nbsp;ресторане шведской линии согласно выбранному варианту</span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                                <div class="article-preview-slide__column article-preview-slide__column_size_m article-preview-slide__column_raised">
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo article-preview__photo_tall"
+                                  style="background-image: url('./temp/all-inclusive/03.jpg')"></span>
+                                        <span class="article-preview__caption">Исследовать все общедоступные зоны и&nbsp;территории комплекса</span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview-slide">
+                                <div class="article-preview-slide__column article-preview-slide__column_size_l">
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo"
+                                  style="background-image: url('./temp/all-inclusive/01.png')"></span>
+                                        <span class="article-preview__caption">Занимайтесь в&nbsp;тренажерном зале и&nbsp;посещайте
+                                групповые тренировки
+                            </span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                                <div class="article-preview-slide__column article-preview-slide__column_size_m">
+                                    <div class="article-preview-slide__tag">Оздоровление</div>
+                                    <div class="article-preview-slide__description">
+                                        Mriya Resort&nbsp;&mdash; это маленький город со&nbsp;множеством возможностей,
+                                        каждый найдет
+                                        себе занятие по&nbsp;вкусу
+                                    </div>
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo article-preview__photo_small"
+                                  style="background-image: url('./temp/all-inclusive/02.jpg')"></span>
+                                        <span class="article-preview__caption">Питаться в&nbsp;ресторане шведской линии согласно выбранному варианту</span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                                <div class="article-preview-slide__column article-preview-slide__column_size_m article-preview-slide__column_raised">
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo article-preview__photo_tall"
+                                  style="background-image: url('./temp/all-inclusive/03.jpg')"></span>
+                                        <span class="article-preview__caption">Исследовать все общедоступные зоны и&nbsp;территории комплекса</span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-preview-slide">
+                                <div class="article-preview-slide__column article-preview-slide__column_size_l">
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo"
+                                  style="background-image: url('./temp/all-inclusive/01.png')"></span>
+                                        <span class="article-preview__caption">Занимайтесь в&nbsp;тренажерном зале и&nbsp;посещайте
+                                групповые тренировки
+                            </span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                                <div class="article-preview-slide__column article-preview-slide__column_size_m">
+                                    <div class="article-preview-slide__tag">Оздоровление</div>
+                                    <div class="article-preview-slide__description">
+                                        Mriya Resort&nbsp;&mdash; это маленький город со&nbsp;множеством возможностей,
+                                        каждый найдет
+                                        себе занятие по&nbsp;вкусу
+                                    </div>
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo article-preview__photo_small"
+                                  style="background-image: url('./temp/all-inclusive/02.jpg')"></span>
+                                        <span class="article-preview__caption">Питаться в&nbsp;ресторане шведской линии согласно выбранному варианту</span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                                <div class="article-preview-slide__column article-preview-slide__column_size_m article-preview-slide__column_raised">
+                                    <a href="javascript:;" class="article-preview">
+                            <span class="article-preview__photo article-preview__photo_tall"
+                                  style="background-image: url('./temp/all-inclusive/03.jpg')"></span>
+                                        <span class="article-preview__caption">Исследовать все общедоступные зоны и&nbsp;территории комплекса</span>
+                                        <span class="article-preview__more">Читать больше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all-inclusive-slide__background-left"></div>
+            <div class="all-inclusive-slide__background-right"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__image"></div>
+            <a href="javascript:;" class="logo footer__logo">
+                <span class="logo__icon"></span>
+            </a>
+            <div class="footer__background-text"></div>
+        </div>
+    </footer>
+</div>
+<script type="module" src="./dist/app.js"></script>
+</body>
+</html>

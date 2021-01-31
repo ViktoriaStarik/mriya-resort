@@ -1,0 +1,60 @@
+@import "../../less/variables";
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: @color-main;
+    transition: .2s linear background-color;
+
+    &:hover {
+        background-color: @color-second;
+    }
+
+    &__line {
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background-color: white;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-color: white;
+        }
+
+        &:before {
+            top: -12px;
+        }
+
+        &:after {
+            bottom: -12px;
+            right: 8px;
+        }
+    }
+
+    &_close {
+        @media (max-width: @screen-xs) {
+            transform: translateX(-100%);
+        }
+        .hamburger__line {
+            transform: rotate(45deg);
+            width: 39px;
+
+            &:before {
+                top: 0;
+                transform: rotate(90deg);
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

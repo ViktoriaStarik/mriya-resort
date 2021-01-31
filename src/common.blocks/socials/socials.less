@@ -1,0 +1,71 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.socials {
+    @path: '../common.blocks/socials/';
+
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: .2s linear opacity;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border: 1px solid @color-second;
+            border-radius: 50%;
+        }
+
+        //Модификаторы
+        &_facebook {
+            .icon('@{path}socials__item_facebook');
+        }
+
+        &_instagram {
+            .icon('@{path}socials__item_instagram');
+        }
+
+        &_twitter {
+            .icon('@{path}socials__item_twitter');
+        }
+
+        &_inverse {
+            background-color: transparent;
+
+            &:after {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            &.socials__item_facebook {
+                .icon('@{path}socials__item_facebook-inverse');
+            }
+
+            &.socials__item_instagram {
+                .icon('@{path}socials__item_instagram-inverse');
+            }
+
+            &.socials__item_twitter {
+                .icon('@{path}socials__item_twitter-inverse');
+            }
+        }
+    }
+}

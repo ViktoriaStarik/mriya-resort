@@ -1,0 +1,67 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.vacation-preview {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: rgba(0, 0, 0, .56);
+        border-radius: 50%;
+        bottom: -232px;
+        left: -200px;
+        z-index: 0;
+    }
+
+    //Элементы
+    &__image {
+        width: 100%;
+        background-size: cover;
+        padding-top: calc(232 / 360 * 100%);
+
+        @media (max-width: @screen-xs) {
+            padding-top: calc(232 / 328 * 100%);
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 176px;
+        padding: 17px 24px;
+        z-index: 1;
+        color: white;
+        font-size: 24px;
+        line-height: 1.33;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .32);
+    }
+
+    &__discount {
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    &__title {
+        font-weight: 300;
+    }
+
+    //Модификаторы
+    &_category {
+        &:after {
+            width: 2000px;
+            height: 2000px;
+            left: -900px;
+            bottom: -1928px;
+        }
+
+        .vacation-preview__content {
+            max-width: none;
+        }
+    }
+}

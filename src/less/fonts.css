@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'EuclidCircularB', sans-serif;
+  src: url('../fonts/'EuclidCircularB', sans-serif.woff2') format('woff2'), url('../fonts/'EuclidCircularB', sans-serif.woff') format('woff');
+  font-weight: ''EuclidCircularB', sans-serif-Light';
+  font-style: 300;
+}
+@font-face {
+  font-family: 'EuclidCircularB', sans-serif;
+  src: url('../fonts/'EuclidCircularB', sans-serif.woff2') format('woff2'), url('../fonts/'EuclidCircularB', sans-serif.woff') format('woff');
+  font-weight: ''EuclidCircularB', sans-serif-Regular';
+  font-style: 400;
+}
+@font-face {
+  font-family: 'EuclidCircularB', sans-serif;
+  src: url('../fonts/'EuclidCircularB', sans-serif.woff2') format('woff2'), url('../fonts/'EuclidCircularB', sans-serif.woff') format('woff');
+  font-weight: ''EuclidCircularB', sans-serif-Medium';
+  font-style: 500;
+}
+@font-face {
+  font-family: 'SangBleuKingdom', serif;
+  src: url('../fonts/'SangBleuKingdom', serif.woff2') format('woff2'), url('../fonts/'SangBleuKingdom', serif.woff') format('woff');
+  font-weight: ''SangBleuKingdom', serif-Regular';
+  font-style: 400;
+}
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,49 @@
+.header {
+  position: relative;
+  display: flex;
+  height: 80px;
+}
+.header:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #3D3C3C;
+  opacity: 0.08;
+}
+.header__wrapper {
+  display: flex;
+}
+.header__left {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.header__right {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3D3C3C;
+}
+.header__link_inverse {
+  color: white;
+}
+.header__hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=header.css.map */

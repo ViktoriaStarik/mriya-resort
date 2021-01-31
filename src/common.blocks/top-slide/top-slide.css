@@ -1,0 +1,19 @@
+.top-slide__wave {
+  width: 182px;
+  height: 32px;
+  background-image: url("../common.blocks/top-slide/top-slide__wave.svg");
+  transform: translateX(-50%);
+}
+.top-slide__top-caption {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.top-slide__description {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+/*# sourceMappingURL=top-slide.css.map */

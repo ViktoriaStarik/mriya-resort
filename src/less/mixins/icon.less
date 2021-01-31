@@ -1,0 +1,10 @@
+.icon(@img) {
+  @data: data-uri('image/svg+xml;charset=UTF-8', "@{img}.svg");
+  background-image+: @data;
+}
+
+.icon(@img, @width, @height: @width) {
+  width: @width;
+  height: @height;
+  .icon(@img);
+}

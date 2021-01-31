@@ -1,0 +1,18 @@
+.socials__item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 50%;
+}
+.socials__item:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 1px solid #BCA56A;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=socials.css.map */

@@ -1,0 +1,1 @@
+(self.webpackChunkwebpacktemplate=self.webpackChunkwebpacktemplate||[]).push([[900],{4900:(e,t,n)=>{"use strict";n.r(t),n.d(t,{default:()=>c});const c=function(e){return e.forEach((function(e){e.querySelectorAll(".header-menu__link_main").forEach((function(e){e.addEventListener("click",(function(){this.classList.toggle("header-menu__link_active")}))}))}))}}}]);

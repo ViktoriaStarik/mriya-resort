@@ -1,0 +1,104 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.header-popup-slider {
+    @path: '../common.blocks/vacation-preview-slider/';
+    width: 420px;
+    margin: 0;
+
+    &__pagination {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        right: 40px;
+        left: auto !important;
+        bottom: 40px !important;
+        width: auto !important;
+    }
+
+    &__pagination-bullet {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 16px;
+        cursor: pointer;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &_active {
+            background-color: @color-second;
+
+            .header-popup-slider__pagination-circle {
+                display: inline-flex;
+            }
+        }
+    }
+
+    &__pagination-circle {
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+    }
+
+    &__pagination-circle-half {
+        position: relative;
+        height: 100%;
+        width: 50%;
+        overflow: hidden;
+
+        &:after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 200%;
+            border-radius: 50%;
+            left: 0;
+            top: 0;
+            border: 2px solid @color-second;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            transform: rotate(135deg);
+            animation: rotate-circle-half 3s linear;
+        }
+
+        &_right {
+            transform: scale(-1, -1);
+
+            &:after {
+                animation-name: rotate-circle-half_right;
+            }
+        }
+    }
+}
+
+@keyframes rotate-circle-half {
+    0% {
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rotate-circle-half_right {
+    0% {
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}

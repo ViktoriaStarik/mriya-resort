@@ -1,0 +1,18 @@
+@import "variables";
+
+.font(@name, @font-name, @weight: normal, @style: normal) {
+    @font-face {
+        font-family: @name;
+        src: url('@{font-path}@{font-name}.woff2') format('woff2'),
+        url('@{font-path}@{font-name}.woff') format('woff');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.font(@fn-main, '@{fn-main}/@{fn-main}-Light', 300);
+.font(@fn-main, '@{fn-main}/@{fn-main}-Regular', 400);
+.font(@fn-main, '@{fn-main}/@{fn-main}-Medium', 500);
+
+.font(@fn-second, '@{fn-second}/@{fn-second}-Regular', 400);
+.font(@fn-second, '@{fn-second}/@{fn-second}-Bold', 700);

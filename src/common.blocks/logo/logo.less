@@ -1,0 +1,45 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.logo {
+    @path: '../common.blocks/logo/';
+    display: inline-block;
+
+    &__icon {
+        .icon('@{path}logo', 66px, 56px);
+        display: inline-block;
+    }
+
+    //Модификаторы
+    &_with-stars {
+        position: relative;
+        padding-bottom: 15px;
+        @media (max-width: @screen-xs) {
+            padding-bottom: 15px;
+            padding-top: 2px;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            @media (max-width: @screen-xs) {
+                display: none;
+            }
+        }
+
+        &:before {
+            height: 8px;
+            width: 88px;
+            background-color: white;
+            z-index: 0;
+        }
+
+        &:after {
+            .icon('@{path}logo_theme_stars', 73px, 8px);
+        }
+    }
+}

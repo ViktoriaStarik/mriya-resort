@@ -1,0 +1,27 @@
+@import "../../less/variables";
+@import "../../less/mixins";
+
+.choose-slide {
+    overflow: hidden;
+    margin-top: -128px;
+    padding-top: 86px;
+    padding-bottom: 96px;
+    @media (max-width: @screen-xs) {
+        padding-bottom: 72px;
+    }
+
+    &__title {
+        margin-bottom: 51px;
+        @media (max-width: @screen-xs) {
+            margin-bottom: 25px;
+        }
+    }
+
+    //Миксы
+    &__filter-group {
+        margin-bottom: 32px;
+        @media (max-width: @screen-xs) {
+            margin-bottom: 24px;
+        }
+    }
+}

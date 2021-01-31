@@ -1,0 +1,10 @@
+.article-preview-slide {
+  display: flex;
+}
+.article-preview-slide__column_size_l {
+  flex-grow: 2;
+}
+.article-preview-slide__column_size_m {
+  flex-grow: 1;
+}
+/*# sourceMappingURL=article-preview-slide.css.map */

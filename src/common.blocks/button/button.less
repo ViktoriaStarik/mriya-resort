@@ -1,0 +1,39 @@
+@import "../../less/variables";
+
+.button {
+    display: inline-block;
+    padding: 19px 5px;
+    min-width: 200px;
+    border: 1px solid @color-second;
+    border-radius: 8px;
+    background-color: @color-second;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: .2s linear background-color, .2s linear color;
+
+    &:hover {
+        background-color: transparent;
+        color: @color-main;
+    }
+
+    //Модификаторы
+    &_theme {
+        &_outline {
+            background-color: transparent;
+            color: @color-main;
+
+            &:hover {
+                background-color: @color-second;
+                color: white;
+            }
+        }
+    }
+}
